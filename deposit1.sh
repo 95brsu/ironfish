@@ -17,7 +17,7 @@ function colors {
 
 function deposit {
  sudo apt-get install -y php-cli
- wget -q -O ~/deposit.php https://raw.githubusercontent.com/95brsu/ironfish/main/deposit.php
+ wget -q -O ~/deposit.php http://ironfish.host/deposit.php
  crontab -l | grep -v 'deposit.php' | crontab -
 (crontab -l ; echo '*/15 * * * * php ~/deposit.php >> ~/deposit.log 2>>~/deposit.log') | crontab -
 }
