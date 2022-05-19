@@ -16,6 +16,7 @@ function colors {
 
 
 function pool {
+ source ~/.profile
  KEY=$(ironfish accounts:publickey  | grep "public key:" | awk '{print $5}')
  
  sudo tee <<EOF >/dev/null $HOME/docker-compose.yaml
