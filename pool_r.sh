@@ -55,7 +55,7 @@ line
 logo
 line
 echo -e "${RED}Устанавливаем ПУЛ${NORMAL}"
-deposit
+pool
 line
 line
 echo -e "${RED}Скрипт завершил свою работу!!!${NORMAL}"
